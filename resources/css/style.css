@@ -390,23 +390,31 @@ header .button {
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  text-align: center;
 }
 
 #quotes-section .quote-citation {
   height: 1.875rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  #quotes-section .quote {
+    text-align: left;
+  }
+}
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
+    flex-direction: column;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    text-align: center;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
